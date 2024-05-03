@@ -19,7 +19,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "npm i",
+	"postCreateCommand": "cd api && npm i",
 	"workspaceFolder": "/graphql-project",
 
 	// Configure tool-specific properties.
