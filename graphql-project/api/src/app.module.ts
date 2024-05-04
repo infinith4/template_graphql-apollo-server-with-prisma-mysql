@@ -11,4 +11,3 @@ import { PostService } from './post.service';
   providers: [AppService, UserService, PrismaService, PostService],
 })
 export class AppModule {}
-
