@@ -83,3 +83,17 @@ npx prisma init
 npx prisma migrate dev --name init
 
 npm install @prisma/client
+
+
+## prisma seed
+
+npx prisma db seed 
+
+## swagger
+https://docs.nestjs.com/openapi/introduction
+
+npm install --save @nestjs/swagger
+
+
+http://localhost:3001/api
+
