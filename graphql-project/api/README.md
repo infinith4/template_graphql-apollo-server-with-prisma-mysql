@@ -87,9 +87,12 @@ npm install @prisma/client
 
 ## prisma seed
 
+https://www.prisma.io/docs/orm/prisma-migrate/workflows/seeding
+
 npx prisma db seed 
 
 ## swagger
+
 https://docs.nestjs.com/openapi/introduction
 
 npm install --save @nestjs/swagger
