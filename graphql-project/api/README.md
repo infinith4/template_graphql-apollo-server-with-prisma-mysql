@@ -100,3 +100,9 @@ npm install --save @nestjs/swagger
 
 http://localhost:3001/api
 
+
+
+## graphql
+
+http://localhost:3001/graphql
+
