@@ -13,3 +13,8 @@ GRANT ALL PRIVILEGES ON *.* TO 'prisma_user'@'%' WITH GRANT OPTION;
 npm install prisma --save-dev
 npx prisma
 npx prisma init
+
+
+https://www.prisma.io/docs/orm/prisma-migrate/workflows/seeding
+
+npx prisma db seed
