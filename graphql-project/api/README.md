@@ -104,5 +104,19 @@ http://localhost:3001/api
 
 ## graphql
 
+https://zenn.dev/hakushun/articles/7daac74ae9af25
+
 http://localhost:3001/graphql
+
+
+
+
+# g は generate のエイリアス
+# src/todo/todo.module.tsの作成
+npx nest g module todo
+# src/todo/todo.service.tsの作成
+npx nest g service todo
+# src/todo/todo.resolver.tsの作成
+npx nest g resolver todo
+
 
