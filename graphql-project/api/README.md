@@ -120,3 +120,11 @@ npx nest g service todo
 npx nest g resolver todo
 
 
+
+## graphql + database
+
+npx nest g mo database
+
+
+npm i typeorm @nestjs/typeorm mysql
+
