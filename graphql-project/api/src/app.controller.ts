@@ -10,6 +10,7 @@ import {
 import { UserService } from './user.service';
 import { PostService } from './post.service';
 import { User as UserModel, Post as PostModel } from '@prisma/client';
+import { ApiBody } from '@nestjs/swagger';
 
 @Controller()
 export class AppController {
@@ -49,6 +50,7 @@ export class AppController {
   }
 
   @Post('post')
+  @ApiBody({ description: 'post data' })
   async createDraft(
     @Body() postData: { title: string; content?: string; authorEmail: string },
   ): Promise<PostModel> {
@@ -63,6 +65,7 @@ export class AppController {
   }
 
   @Post('user')
+  @ApiBody({ description: 'user data' })
   async signupUser(
     @Body() userData: { name?: string; email: string },
   ): Promise<UserModel> {

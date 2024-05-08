@@ -5,9 +5,6 @@ import { PhotoService } from './photo.service';
 
 @Module({
   imports: [DatabaseModule],
-  providers: [
-    ...photoProviders,
-    PhotoService,
-  ],
+  providers: [...photoProviders, PhotoService],
 })
 export class PhotoModule {}

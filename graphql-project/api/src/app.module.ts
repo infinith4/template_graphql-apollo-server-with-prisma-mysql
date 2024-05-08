@@ -9,6 +9,7 @@ import { join } from 'path';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { TodoModule } from './todo/todo.module';
 import { DatabaseModule } from './database/database.module';
+import { PhotoModule } from './photo/photo.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { DatabaseModule } from './database/database.module';
     }),
     TodoModule,
     DatabaseModule,
+    PhotoModule
   ],
   controllers: [AppController],
   providers: [AppService, UserService, PrismaService, PostService],
