@@ -10,6 +10,7 @@ import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { TodoModule } from './todo/todo.module';
 import { DatabaseModule } from './database/database.module';
 import { PhotoModule } from './photo/photo.module';
+import { RecipesModule } from './recipes/recipes.module';
 
 @Module({
   imports: [
@@ -22,7 +23,8 @@ import { PhotoModule } from './photo/photo.module';
     }),
     TodoModule,
     DatabaseModule,
-    PhotoModule
+    PhotoModule,
+    RecipesModule
   ],
   controllers: [AppController],
   providers: [AppService, UserService, PrismaService, PostService],

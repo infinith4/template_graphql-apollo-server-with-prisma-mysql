@@ -123,8 +123,45 @@ npx nest g resolver todo
 
 ## graphql + database
 
-npx nest g mo database
+npm install typeorm --save
+
+npm install reflect-metadata --save
+
+npm install @types/node --save-dev
 
 
-npm i typeorm @nestjs/typeorm mysql
+npm install mysql --save
 
+
+
+npx nest generate resource recipes
+
+https://zenn.dev/tatsuyasusukida/scraps/47c11dd47484c6
+
+
+
+
+### request graphql
+
+Resolver に@Query(() => [Todo], { name: 'todos' }) を追加することで query のname に対応する記載をするとリクエストできる。
+
+```
+query {
+  todos {
+    id,
+    title,
+    status,
+    createdAt,
+    updatedAt
+  }
+}
+```
+
+
+```
+query {
+  recipes {
+    exampleField
+  }
+}
+```
