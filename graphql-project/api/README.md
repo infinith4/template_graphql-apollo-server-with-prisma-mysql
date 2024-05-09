@@ -165,3 +165,25 @@ query {
   }
 }
 ```
+
+mutationはデータ更新のクエリ
+
+```
+mutation {
+  createRecipe(createRecipeInput: {
+    exampleField: 20,
+  }) {
+    exampleField
+  }
+}```
+
+```
+mutation {
+  updateRecipe(updateRecipeInput: {
+    id: 1,
+    exampleField: 5
+  }) {
+    exampleField
+  }
+}
+```
