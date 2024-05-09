@@ -145,6 +145,9 @@ https://zenn.dev/tatsuyasusukida/scraps/47c11dd47484c6
 
 Resolver に@Query(() => [Todo], { name: 'todos' }) を追加することで query のname に対応する記載をするとリクエストできる。
 
+https://zenn.dev/overflow_offers/articles/20220609-graphql-onboarding
+
+
 ```
 query {
   todos {
