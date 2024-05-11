@@ -190,3 +190,8 @@ mutation {
   }
 }
 ```
+
+
+prisma studioというツールを使うことで、ブラウザからGUIベースでDBを直接操作することができます。
+
+npx prisma studio
